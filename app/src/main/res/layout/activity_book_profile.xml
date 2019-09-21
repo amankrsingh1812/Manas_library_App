@@ -1,0 +1,281 @@
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/drawer_design_support_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+
+        android:id="@+id/rootLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:expandedTitleMarginStart="60dp">
+
+        <com.google.android.material.appbar.AppBarLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="450dp"
+            android:theme="@style/AppTheme.AppBarOverlay">
+
+            <com.google.android.material.appbar.CollapsingToolbarLayout
+                android:id="@+id/collapsing_toolbar_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/index" />
+
+                <androidx.appcompat.widget.Toolbar
+                    android:id="@+id/toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize"
+                    android:minHeight="?attr/actionBarSize"
+                    app:layout_collapseMode="pin"
+                    app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+                    app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+            </com.google.android.material.appbar.CollapsingToolbarLayout>
+        </com.google.android.material.appbar.AppBarLayout>
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true"
+            app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <FrameLayout
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    xmlns:tools="http://schemas.android.com/tools"
+                    android:background="#f1eeee"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_marginTop="15sp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="12sp"
+                        android:layout_marginRight="12sp">
+
+
+
+
+                        <LinearLayout
+                            android:id="@+id/linearLayout"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:background="#ffffff"
+                            android:elevation="3sp"
+                            android:orientation="vertical"
+                            android:padding="16sp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.0"
+                            app:layout_constraintStart_toStartOf="parent">
+
+
+
+                            <TextView
+                                android:id="@+id/namepqwo"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:drawableTint="#6F6D6D"
+                                android:text=" Name"
+                                android:textColor="#000000"
+                                android:textSize="18sp"
+                                tools:layout_editor_absoluteX="60dp"
+                                tools:layout_editor_absoluteY="350dp" />
+
+
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/layout5"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:background="#ffffff"
+                            android:elevation="3sp"
+                            android:orientation="vertical"
+                            android:padding="16sp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.0"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:drawableTint="#6F6D6D"
+                                android:text=" Author"
+                                android:textColor="#000000"
+                                android:textSize="18sp"
+                                tools:layout_editor_absoluteX="60dp"
+                                tools:layout_editor_absoluteY="350dp" />
+
+                            <TextView
+                                android:id="@+id/textView19"
+                                android:layout_width="wrap_content"
+                                android:layout_marginTop="8sp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="8dp"
+                                android:text="Loading"
+                                app:layout_constraintStart_toStartOf="parent"
+                                tools:layout_editor_absoluteY="350dp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/linearLayout10"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:padding="16sp"
+                            android:elevation="3dp"
+                            android:orientation="vertical"
+                            app:layout_constraintTop_toBottomOf="@+id/layout5"
+                            android:background="@color/colorWhite"
+                            >
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text=" Description"
+                                android:drawableTint="@color/colorGray"
+                                android:textSize="18sp"
+                                android:textColor="@color/colorBlack"/>
+                            <TextView
+                                android:id="@+id/Desc"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="8dp"
+                                android:layout_marginTop="8dp"
+                                android:text="This textbook of Mathematics has been written by RD Sharma is the best selection for the students of class 11. It covers all the chapters based on the guidelines prescribed by the Central Board of Secondary Education (CBSE). This book is the outcome of the sincere effort and the struggle of the author, who tried his best to keep it simple so that students find it easy to learn. Salient Features of the Textbook • Numerous exercises for the students to brush up their skills • Detailed illustrations help the students to understand the concept and technique of each type of problems. • An algorithmic approach has been taken to solve each problem. • Brief summary of formulae and theories make the learning process easy for the students. • Students are able to enrich their skills on statistics, sets, mensuration, probability and trigonometry. • Help the students to learn more about linear equations and quadratic equations."/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/linearLayout2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginBottom="8dp"
+                            android:background="#ffffff"
+                            android:elevation="3sp"
+                            android:orientation="horizontal"
+                            android:padding="8dp"
+                            android:weightSum="2"
+                            app:layout_constraintTop_toBottomOf="@+id/linearLayout10">
+
+                            <LinearLayout
+                                android:layout_width="0sp"
+                                android:layout_height="match_parent"
+                                android:layout_marginEnd="4sp"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:orientation="vertical"
+                                android:padding="8sp">
+
+                                <ImageView
+                                    android:id="@+id/imageView6"
+                                    android:layout_width="30sp"
+                                    android:layout_height="30sp"
+                                    android:tint="@color/colorPrimary"
+                                    app:srcCompat="@drawable/total"
+                                    tools:layout_editor_absoluteX="50dp"
+                                    tools:layout_editor_absoluteY="461dp" />
+
+                                <TextView
+                                    android:id="@+id/profile_rating"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Total Number of Copies"
+                                    android:textColor="@color/colorPrimary"
+                                    android:textSize="16dp"
+                                    tools:layout_editor_absoluteX="66dp"
+                                    tools:layout_editor_absoluteY="555dp" />
+
+                                <TextView
+                                    android:id="@+id/totalcopies"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="325"
+                                    android:textColor="@color/colorPrimary"
+                                    android:textSize="16sp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="0sp"
+                                android:layout_height="match_parent"
+                                android:layout_marginStart="4sp"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:orientation="vertical"
+                                android:padding="8sp">
+                                <ImageView
+                                    android:id="@+id/imageView7"
+                                    android:layout_width="30sp"
+                                    android:layout_height="30sp"
+                                    android:tint="@color/colorPrimary"
+                                    app:srcCompat="@drawable/avail"
+                                    tools:layout_editor_absoluteX="50dp"
+                                    tools:layout_editor_absoluteY="461dp" />
+
+                                <TextView
+                                    android:id="@+id/profile_recomendation"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Copies Available"
+                                    android:textColor="@color/colorPrimary"
+                                    android:textSize="16dp"
+                                    tools:layout_editor_absoluteX="66dp"
+                                    tools:layout_editor_absoluteY="555dp" />
+
+                                <TextView
+                                    android:id="@+id/availabecopies"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="35"
+                                    android:textColor="@color/colorPrimary"
+                                    android:textSize="16sp" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginBottom="8dp"
+                            android:background="#ffffff"
+                            android:orientation="vertical"
+                            android:weightSum="2"
+                            app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
+
+                        <Button
+                            android:id="@+id/issuebut"
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:textSize="25dp"
+                            android:text="Issue This Book"/>
+                        </LinearLayout>
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                </FrameLayout>
+
+
+
+            </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</androidx.drawerlayout.widget.DrawerLayout>

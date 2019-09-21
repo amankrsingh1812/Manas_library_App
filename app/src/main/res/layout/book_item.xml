@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#ffffe8"
+    android:layout_marginTop="8dp"
+    android:layout_marginStart="8dp"
+    android:layout_marginEnd="8dp"
+    android:elevation="4sp"
+    android:id="@+id/abc"
+    android:clickable="true">
+
+    <ImageView
+        android:id="@+id/book_image"
+        android:layout_width="80dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="8dp"
+        android:src="@drawable/ic_book_black_24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/book_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="Name"
+        android:textSize="20sp"
+        android:textColor="@color/colorBlack"
+        app:layout_constraintStart_toEndOf="@+id/book_image"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/book_image" />
+
+    <TextView
+        android:id="@+id/book_author"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0sp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="Author"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/book_image"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/book_name" />
+    <LinearLayout
+        android:id="@+id/linearLayout8"
+        android:layout_width="0dp"
+        android:layout_height="10dp"
+        android:layout_marginTop="8dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/colorYellow"></LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/colorPrimary"></LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+<!--<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--xmlns:tools="http://schemas.android.com/tools"-->
+<!--android:layout_width="match_parent"-->
+<!--android:layout_height="wrap_content"-->
+<!--android:background="#ffffff"-->
+<!--android:elevation="4sp"-->
+<!--android:id="@+id/abc"-->
+<!--android:clickable="true">-->
+<!--<de.hdodenhof.circleimageview.CircleImageView-->
+    <!--android:id="@+id/book_image"-->
+    <!--android:layout_width="80dp"-->
+    <!--android:layout_height="100dp"-->
+    <!--android:layout_marginStart="16dp"-->
+    <!--android:layout_marginTop="16dp"-->
+    <!--android:layout_marginBottom="8dp"-->
+    <!--android:src="@drawable/book_circular_logo"-->
+    <!--app:civ_border_color="@color/colorYellow"-->
+    <!--app:civ_border_width="2dp"-->
+    <!--app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--app:layout_constraintStart_toStartOf="parent"-->
+    <!--app:layout_constraintTop_toTopOf="parent" />-->
+
+
+<!--<TextView-->
+    <!--android:id="@+id/book_experience"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginStart="8dp"-->
+    <!--android:text="Experience"-->
+    <!--android:textSize="12sp"-->
+    <!--app:layout_constraintStart_toEndOf="@+id/book_image"-->
+    <!--app:layout_constraintTop_toBottomOf="@+id/book_speciality" />-->
+
+<!--<Button-->
+    <!--android:id="@+id/book_consult"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="40sp"-->
+    <!--android:layout_marginEnd="16dp"-->
+    <!--android:layout_marginBottom="16dp"-->
+    <!--android:background="@drawable/button_corner"-->
+    <!--android:backgroundTint="@color/colorBlack"-->
+    <!--android:text="view Profile"-->
+    <!--android:paddingRight="10sp"-->
+    <!--android:paddingLeft="10sp"-->
+    <!--android:textColor="@color/colorBlack"-->
+    <!--app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--app:layout_constraintEnd_toEndOf="parent" />-->
+
+<!--<ImageView-->
+    <!--android:id="@+id/book_map"-->
+    <!--android:layout_width="20sp"-->
+    <!--android:layout_height="20sp"-->
+    <!--android:layout_marginTop="16dp"-->
+    <!--android:layout_marginEnd="16dp"-->
+    <!--android:src="@drawable/google_maps_icon"-->
+    <!--app:layout_constraintEnd_toEndOf="parent"-->
+    <!--app:layout_constraintTop_toTopOf="parent" />-->
+
+<!--<TextView-->
+    <!--android:id="@+id/book_location"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginEnd="16dp"-->
+    <!--android:textSize="12sp"-->
+    <!--android:layout_marginBottom="8dp"-->
+    <!--android:text="Address"-->
+    <!--app:layout_constraintBottom_toTopOf="@+id/book_consult"-->
+    <!--app:layout_constraintEnd_toEndOf="parent" />-->
+
+<!--<RatingBar-->
+    <!--android:id="@+id/ratingBar"-->
+    <!--style="@style/Base.Widget.AppCompat.RatingBar.Small"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginStart="8dp"-->
+    <!--android:progressTint="#d6962f"-->
+    <!--android:rating="4.5"-->
+    <!--app:layout_constraintStart_toEndOf="@+id/book_image"-->
+    <!--app:layout_constraintTop_toBottomOf="@+id/book_experience" />-->
+
+<!--<TextView-->
+    <!--android:id="@+id/textView15"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="(352)"-->
+    <!--android:textSize="12sp"-->
+    <!--app:layout_constraintBottom_toBottomOf="@+id/ratingBar"-->
+    <!--app:layout_constraintStart_toEndOf="@+id/ratingBar"-->
+    <!--app:layout_constraintTop_toTopOf="@+id/ratingBar" />-->
+
+
+<!--</android.support.constraint.ConstraintLayout>-->

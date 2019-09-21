@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "376359624611",
+    "firebase_url": "https://manas-library.firebaseio.com",
+    "project_id": "manas-library",
+    "storage_bucket": "manas-library.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:376359624611:android:231ad00f726cc449",
+        "android_client_info": {
+          "package_name": "com.example.manas_library"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "376359624611-ldngnimj9a8k8tgiochjn7gsd43t98b2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDVKkBUs8sQcLh2B2M-tV4pxgNCG_5bD2g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "376359624611-ldngnimj9a8k8tgiochjn7gsd43t98b2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
